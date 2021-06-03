@@ -36,8 +36,46 @@
 	min-height: 164px;
 }
 
+@media screen and (max-width: 1024px) {
+	.navbar_center {
+		display: none;
+	}
+}
+
 @media screen and (max-width: 991px) {
 	#mc_embed_signup_scroll {
 		margin-top: 30px;
+	}
+}
+
+@media screen and (max-width: 540px) {
+	.logo_text {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.navbar_wrapper {
+		width: 100%;
+	}
+	#mc_embed_signup_scroll {
+		display: flex;
+		width: auto;
+		flex-direction: column;
+	}
+
+	#mce-EMAIL {
+		margin-right: 0;
+	}
+
+	#mc-embedded-subscribe {
+		height: auto;
+		width: 100% !important;
+		margin-top: 16px;
+		padding: 16px 24px;
+	}
+
+	.clear {
+		width: 100%;
 	}
 }
