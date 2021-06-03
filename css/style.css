@@ -1,3 +1,43 @@
+#mc_embed_signup_scroll {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	height: inherit;
+}
+#mc_embed_signup {
+	width: 100%;
+	font-family: 'Founders Grotesk Text';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+#mce-EMAIL {
+	background: #ffffff;
+	border-radius: 4px;
+	padding: 16px 24px;
+	width: 100%;
+	margin-right: 24px;
+	border: 1px solid #ffffff;
+}
+
+#mce-EMAIL::placeholder {
+	color: #cccccc;
+}
 .w-webflow-badge {
 	display: none !important;
+}
+
+#form-container {
+	display: flex;
+	align-items: center;
+	height: 100%;
+	min-height: 164px;
+}
+
+@media screen and (max-width: 991px) {
+	#mc_embed_signup_scroll {
+		margin-top: 30px;
+	}
 }
