@@ -142,14 +142,29 @@
 				}
 			})(document, window.mixpanel || [])
 			mixpanel.init('63b02de7532e4ade6c260394ed923212')
-			mixpanel.track('Home Page Viewed', { 'First Time': 'TRUE' }, function () {
-				setTimeout(mixpanel.register({ 'First Time': 'FALSE' }), 500)
-			})
+			mixpanel.track(
+				'Privacy Page Viewed',
+				{ 'First Time': 'TRUE' },
+				function () {
+					setTimeout(mixpanel.register({ 'First Time': 'FALSE' }), 500)
+				}
+			)
 			mixpanel.track_links('#cta-navbar', 'Request Early Access Navbar')
-			mixpanel.track_links('#cta-landing', 'Request Early Access Landing')
-			mixpanel.track_links('#cta-section', 'Request Early Access CTA Section')
 			mixpanel.track_links('#cta-footer', 'Request Early Access Footer')
-			mixpanel.track_links('#mc-embedded-subscribe', 'Email Subscriber')
+		</script>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=G-JQPHNGGZ3E"
+		></script>
+		<script>
+			window.dataLayer = window.dataLayer || []
+			function gtag() {
+				dataLayer.push(arguments)
+			}
+			gtag('js', new Date())
+
+			gtag('config', 'G-JQPHNGGZ3E')
 		</script>
 	</head>
 	<body class="body">
