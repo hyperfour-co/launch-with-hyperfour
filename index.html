@@ -59,6 +59,63 @@
 				type="text/javascript"
 			></script
 		><![endif]-->
+		<script>
+			!(function (a, b, c, d, t) {
+				var e,
+					f = a.getElementsByTagName('head')[0]
+				if (!a.getElementById(c)) {
+					if (
+						((e = a.createElement(b)),
+						(e.id = c),
+						e.setAttribute('data-vrlps-ucid', d),
+						e.setAttribute('data-vrlps-version', '2'),
+						e.setAttribute('data-vrlps-template', t),
+						(e.src =
+							'https://app.viral-loops.com/popup_assets/js/vl_load_v2.min.js'),
+						window.ub)
+					) {
+						;(jQuery = null), ($ = null)
+						var g = a.createElement(b)
+						;(g.src = 'https://code.jquery.com/jquery-2.2.4.min.js'),
+							f.appendChild(g)
+					}
+					f.appendChild(e)
+					var h = a.createElement('link')
+					;(h.rel = 'stylesheet'),
+						(h.type = 'text/css'),
+						(h.href = 'https://app.viral-loops.com/static/vl-loader.css'),
+						f.appendChild(h)
+					var i = a.createElement('div')
+					;(i.id = 'vl-overlay'), (i.style.display = 'none')
+					var j = a.createElement('div')
+					;(j.id = 'vl-loader'),
+						i.appendChild(j),
+						a.addEventListener('DOMContentLoaded', function (b) {
+							a.body.appendChild(i)
+							for (
+								var c = a.getElementsByClassName('vrlps-trigger'), d = 0;
+								d < c.length;
+								d++
+							)
+								c[d].removeAttribute('href'),
+									(c[d].onclick = function () {
+										a.getElementById('vl-overlay').style.display = 'block'
+									})
+							var e = a.querySelectorAll("[data-vl-widget='popupTrigger']")
+							;[].forEach.call(e, function (b) {
+								var c = a.createElement('div')
+								;(c.className = 'vl-embedded-cta-loader'), b.appendChild(c)
+							})
+						})
+				}
+			})(
+				document,
+				'script',
+				'vrlps-js',
+				'IKvkz9Nq2SKU27mv7anhW8W4vUg',
+				'waitlist'
+			)
+		</script>
 		<script type="text/javascript">
 			!(function (o, c) {
 				var n = c.documentElement,
@@ -213,10 +270,11 @@
 				</div>
 				<div class="nav-wrapper">
 					<a
-						href="https://airtable.com/shr1o5zdGjlyz68iZ"
+						href="#"
 						target="_blank"
 						class="cta_button w-button"
 						id="cta-navbar"
+						class="vrlps-trigger"
 						><strong class="bold-text-4">Request Early Access</strong></a
 					>
 				</div>
@@ -239,11 +297,13 @@
 							the latest products in the market.
 						</p>
 						<a
-							href="https://airtable.com/shr1o5zdGjlyz68iZ"
+							href="#"
 							target="_blank"
 							id="cta-landing"
 							class="cta_button hero_button w-button"
-							><strong class="bold-text-5">Request Early Access</strong></a
+							><strong class="bold-text-5" class="vrlps-trigger"
+								>Request Early Access</strong
+							></a
 						>
 					</div>
 					<div class="column-3 w-col w-col-6">
@@ -278,11 +338,14 @@
 						latest products in the market.
 					</p>
 					<a
-						href="https://airtable.com/shr1o5zdGjlyz68iZ"
+						href="#"
 						target="_blank"
 						class="cta_button hero_button w-button"
 						id="cta-landing"
-						><strong class="bold-text-5">Request Early Access</strong></a
+						class="vrlps-trigger"
+						><strong class="bold-text-5" class="vrlps-trigger"
+							>Request Early Access</strong
+						></a
 					><img
 						src="https://uploads-ssl.webflow.com/60b713af8a42dbf7665b48df/60b71b7e64e9e7578303d902_hyperfour_landing.png"
 						loading="lazy"
@@ -432,10 +495,11 @@
 					Get access to the best tools and resources to kickstart your business
 				</div>
 				<a
-					href="https://airtable.com/shr1o5zdGjlyz68iZ"
+					href="#"
 					target="_blank"
 					id="cta-section"
 					class="cta_button secondary_button w-button"
+					class="vrlps-trigger"
 					><strong class="bold-text-6">Request Early Access</strong></a
 				>
 			</div>
@@ -460,10 +524,11 @@
 						products from anywhere anytime. Together, let’s #hype with Hyperfour
 					</p>
 					<a
-						href="https://airtable.com/shr1o5zdGjlyz68iZ"
+						href="#"
 						target="_blank"
 						id="cta-footer"
 						class="cta_button hero_button w-button"
+						class="vrlps-trigger"
 						><strong>Request Early Access</strong></a
 					>
 				</div>
